@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-puts "这个seeds文件可以自动建立一个admin账号"
+puts "这个seeds文件可以自动建立一个admin账号."
 create_account = User.create([email: 'admin@gmail.com', password:'12345678', password_confirmation: '12345678', is_admin: 'true'])
 puts "Admin account created."
