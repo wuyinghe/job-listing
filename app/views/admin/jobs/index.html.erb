@@ -1,11 +1,10 @@
 <div class="pull-right">
-  <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-default" ) %>
-</div>
-
 <br><br>
-
+  <%= link_to("Add a job", new_admin_job_path, :class => "btn btn-danger" ) %>
+</div>
+<br><br>
 <table class="table table-boldered table-striped custab" >
-    <thead>
+   <thead bgcolor="#c28084">
         <tr>
             <td>
                 职缺
@@ -28,7 +27,6 @@
             </td>
         </tr>
     </thead>
-
     <% @jobs.each do |job| %>
     <tr>
 
@@ -52,7 +50,8 @@
         </td>
         <td>
             <%= job.created_at %>
-        </td>
+         </td>
     </tr>
     <% end %>
+  </tbody>
 </table>

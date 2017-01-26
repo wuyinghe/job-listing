@@ -1,9 +1,6 @@
-<div class="pull-right">
-  <%= link_to("Add a job", new_job_path, :class => "btn btn-default" ) %>
-</div>
-
+<br><br>
 <div class="dropdown clearfix pull-right">
-    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuDivider" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
       排序
         <span class="caret"></span>
     </button>
@@ -22,16 +19,23 @@
     </ul>
 </div>
 
-<table class="table table-boldered">
-  <thead>
+<table class="table table-boldered table-striped custab" >
+   <thead bgcolor="#c28084">
+
         <tr>
             <td>
-                职缺</td>
-            <td>薪资下限</td>
-            <td>薪资上限</td>
-            <td>刊登时间</td>
+              <p style="color:white">职缺</p>
+            </td>
+            <td>
+              <p style="color:white">薪资下限</p>
+            </td>
+            <td>
+              <p style="color:white">薪资上限</p>
+            </td>
+            <td>
+              <p style="color:white">刊登时间</p>
+            </td>
         </tr>
-
     </thead>
     <tbody>
         <% @jobs.each do |job| %>
